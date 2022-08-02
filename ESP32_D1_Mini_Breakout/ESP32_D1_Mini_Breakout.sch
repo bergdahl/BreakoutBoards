@@ -693,7 +693,7 @@ DIN A4, landscape with location and doc. field</description>
 </device>
 </devices>
 </deviceset>
-<deviceset name="ESP32-JTAG">
+<deviceset name="ESP32-JTAG" prefix="X" uservalue="yes">
 <gates>
 <gate name="G$1" symbol="ESP32-JTAG" x="0" y="0"/>
 </gates>
@@ -1904,10 +1904,10 @@ Tactile Switch SPST-NO Top Actuated Surface Mount</description>
 </classes>
 <parts>
 <part name="FRAME1" library="M2M-Frames" deviceset="FRAME-M2M-A4L" device=""/>
-<part name="X1" library="M2M-Connectors" deviceset="HEADER-1X05-2.54" device="" value="5V"/>
-<part name="X2" library="M2M-Connectors" deviceset="HEADER-1X05-2.54" device="" value="3.3V"/>
-<part name="X3" library="M2M-Connectors" deviceset="HEADER-1X05-2.54" device="" value="GND"/>
-<part name="X4" library="M2M-Switches" deviceset="TACT-SWITCH" device="EVQ" value="RESET"/>
+<part name="X3" library="M2M-Connectors" deviceset="HEADER-1X05-2.54" device="" value="5V"/>
+<part name="X4" library="M2M-Connectors" deviceset="HEADER-1X05-2.54" device="" value="3.3V"/>
+<part name="X5" library="M2M-Connectors" deviceset="HEADER-1X05-2.54" device="" value="GND"/>
+<part name="X1" library="M2M-Switches" deviceset="TACT-SWITCH" device="EVQ" value="RESET"/>
 <part name="C1" library="M2M-Passives" deviceset="CAP" device="C0603" value="100nF"/>
 <part name="SUPPLY1" library="M2M-Power" deviceset="5V" device=""/>
 <part name="SUPPLY2" library="M2M-Power" deviceset="3.3V" device=""/>
@@ -1917,14 +1917,12 @@ Tactile Switch SPST-NO Top Actuated Surface Mount</description>
 <part name="GND2" library="M2M-Power" deviceset="GND" device=""/>
 <part name="GND3" library="M2M-Power" deviceset="GND" device=""/>
 <part name="GND4" library="M2M-Power" deviceset="GND" device=""/>
-<part name="U$2" library="M2M-Connectors" deviceset="HEADER-1X10-2.54" device=""/>
+<part name="X6" library="M2M-Connectors" deviceset="HEADER-1X10-2.54" device=""/>
 <part name="H1" library="M2M-Holes" deviceset="MOUNTHOLE-PAD" device="3.2"/>
 <part name="H2" library="M2M-Holes" deviceset="MOUNTHOLE-PAD" device="3.2"/>
 <part name="H3" library="M2M-Holes" deviceset="MOUNTHOLE-PAD" device="3.2"/>
 <part name="H4" library="M2M-Holes" deviceset="MOUNTHOLE-PAD" device="3.2"/>
 <part name="GND5" library="M2M-Power" deviceset="GND" device=""/>
-<part name="D1" library="M2M-LED" deviceset="LED" device="0603"/>
-<part name="D2" library="M2M-LED" deviceset="LED" device="0603"/>
 <part name="D3" library="M2M-LED" deviceset="LED" device="0603"/>
 <part name="D4" library="M2M-LED" deviceset="LED" device="0603"/>
 <part name="D5" library="M2M-LED" deviceset="LED" device="0603"/>
@@ -1932,35 +1930,37 @@ Tactile Switch SPST-NO Top Actuated Surface Mount</description>
 <part name="D7" library="M2M-LED" deviceset="LED" device="0603"/>
 <part name="D8" library="M2M-LED" deviceset="LED" device="0603"/>
 <part name="D9" library="M2M-LED" deviceset="LED" device="0603"/>
-<part name="D10" library="M2M-LED" deviceset="LED" device="0603" value="RED"/>
-<part name="D11" library="M2M-LED" deviceset="LED" device="0603" value="GREEN"/>
+<part name="D10" library="M2M-LED" deviceset="LED" device="0603"/>
+<part name="D11" library="M2M-LED" deviceset="LED" device="0603"/>
+<part name="D1" library="M2M-LED" deviceset="LED" device="0603" value="RED"/>
+<part name="D2" library="M2M-LED" deviceset="LED" device="0603" value="GREEN"/>
 <part name="R1" library="M2M-Passives" deviceset="RESISTOR" device="0603" value="1K"/>
 <part name="R2" library="M2M-Passives" deviceset="RESISTOR" device="0603" value="1K"/>
 <part name="GND7" library="M2M-Power" deviceset="GND" device=""/>
 <part name="D12" library="M2M-LED" deviceset="LED" device="0603"/>
 <part name="D13" library="M2M-LED" deviceset="LED" device="0603"/>
 <part name="U1" library="M2M-Modules" deviceset="WEMOS_ESP32_D1_MINI" device="" value="ESP32_D1_MINI"/>
-<part name="X6" library="M2M-Connectors" deviceset="ESP32-JTAG" device="TH"/>
+<part name="X2" library="M2M-Connectors" deviceset="ESP32-JTAG" device="TH"/>
 <part name="GND8" library="M2M-Power" deviceset="GND" device=""/>
 <part name="SUPPLY5" library="M2M-Power" deviceset="3.3V" device=""/>
 <part name="SUPPLY6" library="M2M-Power" deviceset="5V" device=""/>
 <part name="SUPPLY7" library="M2M-Power" deviceset="3.3V" device=""/>
 <part name="D14" library="M2M-LED" deviceset="LED" device="0603"/>
 <part name="D15" library="M2M-LED" deviceset="LED" device="0603"/>
-<part name="D16" library="M2M-LED" deviceset="LED" device="0603"/>
 <part name="D17" library="M2M-LED" deviceset="LED" device="0603"/>
 <part name="D18" library="M2M-LED" deviceset="LED" device="0603"/>
 <part name="D19" library="M2M-LED" deviceset="LED" device="0603"/>
 <part name="D20" library="M2M-LED" deviceset="LED" device="0603"/>
 <part name="D21" library="M2M-LED" deviceset="LED" device="0603"/>
+<part name="D22" library="M2M-LED" deviceset="LED" device="0603"/>
 <part name="R3" library="M2M-Passives" deviceset="RESISTOR-ARRAY-X4" device="1206" value="1K"/>
 <part name="R4" library="M2M-Passives" deviceset="RESISTOR-ARRAY-X4" device="1206" value="1K"/>
 <part name="R5" library="M2M-Passives" deviceset="RESISTOR-ARRAY-X4" device="1206" value="1K"/>
 <part name="R6" library="M2M-Passives" deviceset="RESISTOR-ARRAY-X4" device="1206" value="1K"/>
 <part name="R7" library="M2M-Passives" deviceset="RESISTOR-ARRAY-X4" device="1206" value="1K"/>
 <part name="GND6" library="M2M-Power" deviceset="GND" device=""/>
-<part name="X5" library="M2M-Connectors" deviceset="HEADER-1X10-2.54" device=""/>
-<part name="D22" library="M2M-LED" deviceset="LED" device="0603"/>
+<part name="X7" library="M2M-Connectors" deviceset="HEADER-1X10-2.54" device=""/>
+<part name="D16" library="M2M-LED" deviceset="LED" device="0603"/>
 </parts>
 <sheets>
 <sheet>
@@ -1972,19 +1972,19 @@ Tactile Switch SPST-NO Top Actuated Surface Mount</description>
 <attribute name="LAST_DATE_TIME" x="162.29" y="10.16" size="2.286" layer="94"/>
 <attribute name="SHEET" x="230.505" y="5.08" size="2.54" layer="94"/>
 </instance>
-<instance part="X1" gate="G$1" x="58.42" y="157.48" smashed="yes">
+<instance part="X3" gate="G$1" x="58.42" y="157.48" smashed="yes">
 <attribute name="VALUE" x="55.88" y="147.32" size="1.778" layer="96"/>
 <attribute name="NAME" x="55.88" y="165.862" size="1.778" layer="95"/>
 </instance>
-<instance part="X2" gate="G$1" x="58.42" y="134.62" smashed="yes">
+<instance part="X4" gate="G$1" x="58.42" y="134.62" smashed="yes">
 <attribute name="VALUE" x="55.88" y="124.46" size="1.778" layer="96"/>
 <attribute name="NAME" x="55.88" y="143.002" size="1.778" layer="95"/>
 </instance>
-<instance part="X3" gate="G$1" x="58.42" y="111.76" smashed="yes">
+<instance part="X5" gate="G$1" x="58.42" y="111.76" smashed="yes">
 <attribute name="VALUE" x="55.88" y="101.6" size="1.778" layer="96"/>
 <attribute name="NAME" x="55.88" y="120.142" size="1.778" layer="95"/>
 </instance>
-<instance part="X4" gate="G$1" x="35.56" y="58.42" smashed="yes">
+<instance part="X1" gate="G$1" x="35.56" y="58.42" smashed="yes">
 <attribute name="NAME" x="30.48" y="61.722" size="1.778" layer="95"/>
 <attribute name="VALUE" x="30.48" y="53.594" size="1.778" layer="96"/>
 </instance>
@@ -2016,7 +2016,7 @@ Tactile Switch SPST-NO Top Actuated Surface Mount</description>
 <instance part="GND4" gate="1" x="27.94" y="40.64" smashed="yes">
 <attribute name="VALUE" x="27.94" y="40.386" size="1.778" layer="96" align="top-center"/>
 </instance>
-<instance part="U$2" gate="G$1" x="182.88" y="152.4" smashed="yes">
+<instance part="X6" gate="G$1" x="182.88" y="152.4" smashed="yes">
 <attribute name="VALUE" x="180.34" y="132.08" size="1.778" layer="96"/>
 <attribute name="NAME" x="180.34" y="165.862" size="1.778" layer="95"/>
 </instance>
@@ -2027,46 +2027,46 @@ Tactile Switch SPST-NO Top Actuated Surface Mount</description>
 <instance part="GND5" gate="1" x="149.86" y="7.62" smashed="yes">
 <attribute name="VALUE" x="149.86" y="7.366" size="1.778" layer="96" align="top-center"/>
 </instance>
-<instance part="D1" gate="G$1" x="106.68" y="81.28" smashed="yes">
+<instance part="D3" gate="G$1" x="106.68" y="81.28" smashed="yes">
 <attribute name="VALUE" x="108.585" y="76.708" size="1.778" layer="96" font="vector" rot="R90" align="top-left"/>
 </instance>
-<instance part="D2" gate="G$1" x="114.3" y="81.28" smashed="yes">
+<instance part="D4" gate="G$1" x="114.3" y="81.28" smashed="yes">
 <attribute name="NAME" x="110.871" y="76.708" size="1.778" layer="95" font="vector" rot="R90"/>
 <attribute name="VALUE" x="116.205" y="76.708" size="1.778" layer="96" font="vector" rot="R90" align="top-left"/>
 </instance>
-<instance part="D3" gate="G$1" x="121.92" y="81.28" smashed="yes">
+<instance part="D5" gate="G$1" x="121.92" y="81.28" smashed="yes">
 <attribute name="NAME" x="118.491" y="76.708" size="1.778" layer="95" font="vector" rot="R90"/>
 <attribute name="VALUE" x="123.825" y="76.708" size="1.778" layer="96" font="vector" rot="R90" align="top-left"/>
 </instance>
-<instance part="D4" gate="G$1" x="129.54" y="81.28" smashed="yes">
+<instance part="D6" gate="G$1" x="129.54" y="81.28" smashed="yes">
 <attribute name="NAME" x="126.111" y="76.708" size="1.778" layer="95" font="vector" rot="R90"/>
 <attribute name="VALUE" x="131.445" y="76.708" size="1.778" layer="96" font="vector" rot="R90" align="top-left"/>
 </instance>
-<instance part="D5" gate="G$1" x="137.16" y="81.28" smashed="yes">
+<instance part="D7" gate="G$1" x="137.16" y="81.28" smashed="yes">
 <attribute name="NAME" x="133.731" y="76.708" size="1.778" layer="95" font="vector" rot="R90"/>
 <attribute name="VALUE" x="139.065" y="76.708" size="1.778" layer="96" font="vector" rot="R90" align="top-left"/>
 </instance>
-<instance part="D6" gate="G$1" x="144.78" y="81.28" smashed="yes">
+<instance part="D8" gate="G$1" x="144.78" y="81.28" smashed="yes">
 <attribute name="NAME" x="141.351" y="76.708" size="1.778" layer="95" font="vector" rot="R90"/>
 <attribute name="VALUE" x="146.685" y="76.708" size="1.778" layer="96" font="vector" rot="R90" align="top-left"/>
 </instance>
-<instance part="D7" gate="G$1" x="152.4" y="81.28" smashed="yes">
+<instance part="D9" gate="G$1" x="152.4" y="81.28" smashed="yes">
 <attribute name="NAME" x="148.971" y="76.708" size="1.778" layer="95" font="vector" rot="R90"/>
 <attribute name="VALUE" x="154.305" y="76.708" size="1.778" layer="96" font="vector" rot="R90" align="top-left"/>
 </instance>
-<instance part="D8" gate="G$1" x="160.02" y="81.28" smashed="yes">
+<instance part="D10" gate="G$1" x="160.02" y="81.28" smashed="yes">
 <attribute name="NAME" x="156.591" y="76.708" size="1.778" layer="95" font="vector" rot="R90"/>
 <attribute name="VALUE" x="161.925" y="76.708" size="1.778" layer="96" font="vector" rot="R90" align="top-left"/>
 </instance>
-<instance part="D9" gate="G$1" x="167.64" y="81.28" smashed="yes">
+<instance part="D11" gate="G$1" x="167.64" y="81.28" smashed="yes">
 <attribute name="NAME" x="164.211" y="76.708" size="1.778" layer="95" font="vector" rot="R90"/>
 <attribute name="VALUE" x="169.545" y="76.708" size="1.778" layer="96" font="vector" rot="R90" align="top-left"/>
 </instance>
-<instance part="D10" gate="G$1" x="20.32" y="160.02" smashed="yes">
+<instance part="D1" gate="G$1" x="20.32" y="160.02" smashed="yes">
 <attribute name="NAME" x="16.891" y="155.448" size="1.778" layer="95" font="vector" rot="R90"/>
 <attribute name="VALUE" x="22.225" y="155.448" size="1.778" layer="96" font="vector" rot="R90" align="top-left"/>
 </instance>
-<instance part="D11" gate="G$1" x="30.48" y="160.02" smashed="yes">
+<instance part="D2" gate="G$1" x="30.48" y="160.02" smashed="yes">
 <attribute name="NAME" x="27.051" y="155.448" size="1.778" layer="95" font="vector" rot="R90"/>
 <attribute name="VALUE" x="32.385" y="155.448" size="1.778" layer="96" font="vector" rot="R90" align="top-left"/>
 </instance>
@@ -2093,7 +2093,7 @@ Tactile Switch SPST-NO Top Actuated Surface Mount</description>
 <attribute name="NAME" x="114.3" y="165.862" size="1.778" layer="95"/>
 <attribute name="VALUE" x="114.3" y="101.6" size="1.778" layer="96"/>
 </instance>
-<instance part="X6" gate="G$1" x="50.8" y="25.4" smashed="yes">
+<instance part="X2" gate="G$1" x="50.8" y="25.4" smashed="yes">
 <attribute name="NAME" x="40.64" y="33.782" size="1.778" layer="95"/>
 <attribute name="VALUE" x="40.64" y="15.24" size="1.778" layer="96"/>
 </instance>
@@ -2117,27 +2117,27 @@ Tactile Switch SPST-NO Top Actuated Surface Mount</description>
 <attribute name="NAME" x="194.691" y="76.708" size="1.778" layer="95" font="vector" rot="R90"/>
 <attribute name="VALUE" x="200.025" y="76.708" size="1.778" layer="96" font="vector" rot="R90" align="top-left"/>
 </instance>
-<instance part="D16" gate="G$1" x="213.36" y="81.28" smashed="yes">
+<instance part="D17" gate="G$1" x="213.36" y="81.28" smashed="yes">
 <attribute name="NAME" x="209.931" y="76.708" size="1.778" layer="95" font="vector" rot="R90"/>
 <attribute name="VALUE" x="215.265" y="76.708" size="1.778" layer="96" font="vector" rot="R90" align="top-left"/>
 </instance>
-<instance part="D17" gate="G$1" x="220.98" y="81.28" smashed="yes">
+<instance part="D18" gate="G$1" x="220.98" y="81.28" smashed="yes">
 <attribute name="NAME" x="217.551" y="76.708" size="1.778" layer="95" font="vector" rot="R90"/>
 <attribute name="VALUE" x="222.885" y="76.708" size="1.778" layer="96" font="vector" rot="R90" align="top-left"/>
 </instance>
-<instance part="D18" gate="G$1" x="228.6" y="81.28" smashed="yes">
+<instance part="D19" gate="G$1" x="228.6" y="81.28" smashed="yes">
 <attribute name="NAME" x="225.171" y="76.708" size="1.778" layer="95" font="vector" rot="R90"/>
 <attribute name="VALUE" x="230.505" y="76.708" size="1.778" layer="96" font="vector" rot="R90" align="top-left"/>
 </instance>
-<instance part="D19" gate="G$1" x="236.22" y="81.28" smashed="yes">
+<instance part="D20" gate="G$1" x="236.22" y="81.28" smashed="yes">
 <attribute name="NAME" x="232.791" y="76.708" size="1.778" layer="95" font="vector" rot="R90"/>
 <attribute name="VALUE" x="238.125" y="76.708" size="1.778" layer="96" font="vector" rot="R90" align="top-left"/>
 </instance>
-<instance part="D20" gate="G$1" x="243.84" y="81.28" smashed="yes">
+<instance part="D21" gate="G$1" x="243.84" y="81.28" smashed="yes">
 <attribute name="NAME" x="240.411" y="76.708" size="1.778" layer="95" font="vector" rot="R90"/>
 <attribute name="VALUE" x="245.745" y="76.708" size="1.778" layer="96" font="vector" rot="R90" align="top-left"/>
 </instance>
-<instance part="D21" gate="G$1" x="251.46" y="81.28" smashed="yes">
+<instance part="D22" gate="G$1" x="251.46" y="81.28" smashed="yes">
 <attribute name="NAME" x="248.031" y="76.708" size="1.778" layer="95" font="vector" rot="R90"/>
 <attribute name="VALUE" x="253.365" y="76.708" size="1.778" layer="96" font="vector" rot="R90" align="top-left"/>
 </instance>
@@ -2164,11 +2164,11 @@ Tactile Switch SPST-NO Top Actuated Surface Mount</description>
 <instance part="GND6" gate="1" x="236.22" y="43.18" smashed="yes">
 <attribute name="VALUE" x="236.22" y="42.926" size="1.778" layer="96" align="top-center"/>
 </instance>
-<instance part="X5" gate="G$1" x="218.44" y="152.4" smashed="yes">
+<instance part="X7" gate="G$1" x="218.44" y="152.4" smashed="yes">
 <attribute name="VALUE" x="215.9" y="134.62" size="1.778" layer="96"/>
 <attribute name="NAME" x="215.9" y="165.862" size="1.778" layer="95"/>
 </instance>
-<instance part="D22" gate="G$1" x="205.74" y="81.28" smashed="yes">
+<instance part="D16" gate="G$1" x="205.74" y="81.28" smashed="yes">
 <attribute name="NAME" x="202.311" y="76.708" size="1.778" layer="95" font="vector" rot="R90"/>
 <attribute name="VALUE" x="207.645" y="76.708" size="1.778" layer="96" font="vector" rot="R90" align="top-left"/>
 </instance>
@@ -2185,29 +2185,29 @@ Tactile Switch SPST-NO Top Actuated Surface Mount</description>
 </segment>
 <segment>
 <pinref part="SUPPLY1" gate="G$1" pin="5V"/>
-<pinref part="X1" gate="G$1" pin="5"/>
+<pinref part="X3" gate="G$1" pin="5"/>
 <wire x1="50.8" y1="165.1" x2="50.8" y2="162.56" width="0.1524" layer="91"/>
 <wire x1="50.8" y1="162.56" x2="50.8" y2="160.02" width="0.1524" layer="91"/>
 <wire x1="50.8" y1="160.02" x2="50.8" y2="157.48" width="0.1524" layer="91"/>
 <wire x1="50.8" y1="157.48" x2="50.8" y2="154.94" width="0.1524" layer="91"/>
 <wire x1="50.8" y1="154.94" x2="50.8" y2="152.4" width="0.1524" layer="91"/>
 <wire x1="50.8" y1="152.4" x2="53.34" y2="152.4" width="0.1524" layer="91"/>
-<pinref part="X1" gate="G$1" pin="4"/>
+<pinref part="X3" gate="G$1" pin="4"/>
 <wire x1="53.34" y1="154.94" x2="50.8" y2="154.94" width="0.1524" layer="91"/>
 <junction x="50.8" y="154.94"/>
-<pinref part="X1" gate="G$1" pin="3"/>
+<pinref part="X3" gate="G$1" pin="3"/>
 <wire x1="53.34" y1="157.48" x2="50.8" y2="157.48" width="0.1524" layer="91"/>
 <junction x="50.8" y="157.48"/>
-<pinref part="X1" gate="G$1" pin="2"/>
+<pinref part="X3" gate="G$1" pin="2"/>
 <wire x1="53.34" y1="160.02" x2="50.8" y2="160.02" width="0.1524" layer="91"/>
 <junction x="50.8" y="160.02"/>
-<pinref part="X1" gate="G$1" pin="1"/>
+<pinref part="X3" gate="G$1" pin="1"/>
 <wire x1="53.34" y1="162.56" x2="50.8" y2="162.56" width="0.1524" layer="91"/>
 <junction x="50.8" y="162.56"/>
 </segment>
 <segment>
 <pinref part="SUPPLY6" gate="G$1" pin="5V"/>
-<pinref part="D10" gate="G$1" pin="A"/>
+<pinref part="D1" gate="G$1" pin="A"/>
 <wire x1="20.32" y1="165.1" x2="20.32" y2="162.56" width="0.1524" layer="91"/>
 </segment>
 </net>
@@ -2219,36 +2219,36 @@ Tactile Switch SPST-NO Top Actuated Surface Mount</description>
 <pinref part="U1" gate="G$1" pin="3.3V"/>
 </segment>
 <segment>
-<pinref part="X2" gate="G$1" pin="5"/>
+<pinref part="X4" gate="G$1" pin="5"/>
 <pinref part="SUPPLY2" gate="G$1" pin="3.3V"/>
 <wire x1="53.34" y1="129.54" x2="50.8" y2="129.54" width="0.1524" layer="91"/>
 <wire x1="50.8" y1="129.54" x2="50.8" y2="132.08" width="0.1524" layer="91"/>
-<pinref part="X2" gate="G$1" pin="4"/>
+<pinref part="X4" gate="G$1" pin="4"/>
 <wire x1="50.8" y1="132.08" x2="50.8" y2="134.62" width="0.1524" layer="91"/>
 <wire x1="50.8" y1="134.62" x2="50.8" y2="137.16" width="0.1524" layer="91"/>
 <wire x1="50.8" y1="137.16" x2="50.8" y2="139.7" width="0.1524" layer="91"/>
 <wire x1="50.8" y1="139.7" x2="50.8" y2="142.24" width="0.1524" layer="91"/>
 <wire x1="53.34" y1="132.08" x2="50.8" y2="132.08" width="0.1524" layer="91"/>
 <junction x="50.8" y="132.08"/>
-<pinref part="X2" gate="G$1" pin="3"/>
+<pinref part="X4" gate="G$1" pin="3"/>
 <wire x1="53.34" y1="134.62" x2="50.8" y2="134.62" width="0.1524" layer="91"/>
 <junction x="50.8" y="134.62"/>
-<pinref part="X2" gate="G$1" pin="2"/>
+<pinref part="X4" gate="G$1" pin="2"/>
 <wire x1="53.34" y1="137.16" x2="50.8" y2="137.16" width="0.1524" layer="91"/>
 <junction x="50.8" y="137.16"/>
-<pinref part="X2" gate="G$1" pin="1"/>
+<pinref part="X4" gate="G$1" pin="1"/>
 <wire x1="53.34" y1="139.7" x2="50.8" y2="139.7" width="0.1524" layer="91"/>
 <junction x="50.8" y="139.7"/>
 </segment>
 <segment>
-<pinref part="X6" gate="G$1" pin="VCC"/>
+<pinref part="X2" gate="G$1" pin="VCC"/>
 <pinref part="SUPPLY5" gate="G$1" pin="3.3V"/>
 <wire x1="63.5" y1="30.48" x2="66.04" y2="30.48" width="0.1524" layer="91"/>
 <wire x1="66.04" y1="30.48" x2="66.04" y2="33.02" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="SUPPLY7" gate="G$1" pin="3.3V"/>
-<pinref part="D11" gate="G$1" pin="A"/>
+<pinref part="D2" gate="G$1" pin="A"/>
 <wire x1="30.48" y1="165.1" x2="30.48" y2="162.56" width="0.1524" layer="91"/>
 </segment>
 </net>
@@ -2259,14 +2259,14 @@ Tactile Switch SPST-NO Top Actuated Surface Mount</description>
 <pinref part="U1" gate="G$1" pin="TX"/>
 </segment>
 <segment>
-<pinref part="D20" gate="G$1" pin="A"/>
+<pinref part="D21" gate="G$1" pin="A"/>
 <wire x1="243.84" y1="91.44" x2="243.84" y2="83.82" width="0.1524" layer="91"/>
 <label x="243.84" y="88.9" size="1.778" layer="95" rot="R90"/>
 </segment>
 <segment>
 <wire x1="200.66" y1="142.24" x2="213.36" y2="142.24" width="0.1524" layer="91"/>
 <label x="200.66" y="142.24" size="1.778" layer="95"/>
-<pinref part="X5" gate="G$1" pin="9"/>
+<pinref part="X7" gate="G$1" pin="9"/>
 </segment>
 </net>
 <net name="RX" class="0">
@@ -2276,14 +2276,14 @@ Tactile Switch SPST-NO Top Actuated Surface Mount</description>
 <pinref part="U1" gate="G$1" pin="RX"/>
 </segment>
 <segment>
-<pinref part="D21" gate="G$1" pin="A"/>
+<pinref part="D22" gate="G$1" pin="A"/>
 <wire x1="251.46" y1="91.44" x2="251.46" y2="83.82" width="0.1524" layer="91"/>
 <label x="251.46" y="88.9" size="1.778" layer="95" rot="R90"/>
 </segment>
 <segment>
 <wire x1="200.66" y1="139.7" x2="213.36" y2="139.7" width="0.1524" layer="91"/>
 <label x="200.66" y="139.7" size="1.778" layer="95"/>
-<pinref part="X5" gate="G$1" pin="10"/>
+<pinref part="X7" gate="G$1" pin="10"/>
 </segment>
 </net>
 <net name="GND" class="0">
@@ -2303,11 +2303,11 @@ Tactile Switch SPST-NO Top Actuated Surface Mount</description>
 </segment>
 <segment>
 <pinref part="GND4" gate="1" pin="GND"/>
-<pinref part="X4" gate="G$1" pin="A"/>
+<pinref part="X1" gate="G$1" pin="A"/>
 <wire x1="27.94" y1="43.18" x2="27.94" y2="55.88" width="0.1524" layer="91"/>
 <wire x1="27.94" y1="55.88" x2="27.94" y2="58.42" width="0.1524" layer="91"/>
 <wire x1="27.94" y1="58.42" x2="30.48" y2="58.42" width="0.1524" layer="91"/>
-<pinref part="X4" gate="G$1" pin="A'"/>
+<pinref part="X1" gate="G$1" pin="A'"/>
 <wire x1="30.48" y1="55.88" x2="27.94" y2="55.88" width="0.1524" layer="91"/>
 <junction x="27.94" y="55.88"/>
 </segment>
@@ -2317,24 +2317,24 @@ Tactile Switch SPST-NO Top Actuated Surface Mount</description>
 <wire x1="43.18" y1="43.18" x2="43.18" y2="45.72" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="X3" gate="G$1" pin="1"/>
+<pinref part="X5" gate="G$1" pin="1"/>
 <pinref part="GND1" gate="1" pin="GND"/>
 <wire x1="53.34" y1="116.84" x2="50.8" y2="116.84" width="0.1524" layer="91"/>
 <wire x1="50.8" y1="116.84" x2="50.8" y2="114.3" width="0.1524" layer="91"/>
-<pinref part="X3" gate="G$1" pin="5"/>
+<pinref part="X5" gate="G$1" pin="5"/>
 <wire x1="50.8" y1="114.3" x2="50.8" y2="111.76" width="0.1524" layer="91"/>
 <wire x1="50.8" y1="111.76" x2="50.8" y2="109.22" width="0.1524" layer="91"/>
 <wire x1="50.8" y1="109.22" x2="50.8" y2="106.68" width="0.1524" layer="91"/>
 <wire x1="50.8" y1="106.68" x2="50.8" y2="104.14" width="0.1524" layer="91"/>
 <wire x1="53.34" y1="106.68" x2="50.8" y2="106.68" width="0.1524" layer="91"/>
 <junction x="50.8" y="106.68"/>
-<pinref part="X3" gate="G$1" pin="4"/>
+<pinref part="X5" gate="G$1" pin="4"/>
 <wire x1="53.34" y1="109.22" x2="50.8" y2="109.22" width="0.1524" layer="91"/>
 <junction x="50.8" y="109.22"/>
-<pinref part="X3" gate="G$1" pin="3"/>
+<pinref part="X5" gate="G$1" pin="3"/>
 <wire x1="53.34" y1="111.76" x2="50.8" y2="111.76" width="0.1524" layer="91"/>
 <junction x="50.8" y="111.76"/>
-<pinref part="X3" gate="G$1" pin="2"/>
+<pinref part="X5" gate="G$1" pin="2"/>
 <wire x1="53.34" y1="114.3" x2="50.8" y2="114.3" width="0.1524" layer="91"/>
 <junction x="50.8" y="114.3"/>
 </segment>
@@ -2367,16 +2367,16 @@ Tactile Switch SPST-NO Top Actuated Surface Mount</description>
 <wire x1="30.48" y1="142.24" x2="30.48" y2="139.7" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="X6" gate="G$1" pin="GND@3"/>
+<pinref part="X2" gate="G$1" pin="GND@3"/>
 <pinref part="GND8" gate="1" pin="GND"/>
 <wire x1="63.5" y1="27.94" x2="66.04" y2="27.94" width="0.1524" layer="91"/>
 <wire x1="66.04" y1="27.94" x2="66.04" y2="25.4" width="0.1524" layer="91"/>
-<pinref part="X6" gate="G$1" pin="GND@5"/>
+<pinref part="X2" gate="G$1" pin="GND@5"/>
 <wire x1="66.04" y1="25.4" x2="66.04" y2="22.86" width="0.1524" layer="91"/>
 <wire x1="66.04" y1="22.86" x2="66.04" y2="17.78" width="0.1524" layer="91"/>
 <wire x1="63.5" y1="25.4" x2="66.04" y2="25.4" width="0.1524" layer="91"/>
 <junction x="66.04" y="25.4"/>
-<pinref part="X6" gate="G$1" pin="GND@9"/>
+<pinref part="X2" gate="G$1" pin="GND@9"/>
 <wire x1="63.5" y1="22.86" x2="66.04" y2="22.86" width="0.1524" layer="91"/>
 <junction x="66.04" y="22.86"/>
 </segment>
@@ -2465,13 +2465,13 @@ Tactile Switch SPST-NO Top Actuated Surface Mount</description>
 </net>
 <net name="RST" class="0">
 <segment>
-<pinref part="X4" gate="G$1" pin="B"/>
+<pinref part="X1" gate="G$1" pin="B"/>
 <wire x1="40.64" y1="58.42" x2="43.18" y2="58.42" width="0.1524" layer="91"/>
 <pinref part="C1" gate="G$1" pin="1"/>
 <wire x1="43.18" y1="58.42" x2="58.42" y2="58.42" width="0.1524" layer="91"/>
 <wire x1="43.18" y1="53.34" x2="43.18" y2="55.88" width="0.1524" layer="91"/>
 <junction x="43.18" y="58.42"/>
-<pinref part="X4" gate="G$1" pin="B'"/>
+<pinref part="X1" gate="G$1" pin="B'"/>
 <wire x1="43.18" y1="55.88" x2="43.18" y2="58.42" width="0.1524" layer="91"/>
 <wire x1="40.64" y1="55.88" x2="43.18" y2="55.88" width="0.1524" layer="91"/>
 <junction x="43.18" y="55.88"/>
@@ -2483,21 +2483,21 @@ Tactile Switch SPST-NO Top Actuated Surface Mount</description>
 <pinref part="U1" gate="G$1" pin="RST"/>
 </segment>
 <segment>
-<pinref part="X6" gate="G$1" pin="RST"/>
+<pinref part="X2" gate="G$1" pin="RST"/>
 <wire x1="25.4" y1="20.32" x2="38.1" y2="20.32" width="0.1524" layer="91"/>
 <label x="25.4" y="20.32" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="N$1" class="0">
 <segment>
-<pinref part="D11" gate="G$1" pin="C"/>
+<pinref part="D2" gate="G$1" pin="C"/>
 <pinref part="R2" gate="G$1" pin="2"/>
 <wire x1="30.48" y1="154.94" x2="30.48" y2="152.4" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$2" class="0">
 <segment>
-<pinref part="D10" gate="G$1" pin="C"/>
+<pinref part="D1" gate="G$1" pin="C"/>
 <pinref part="R1" gate="G$1" pin="2"/>
 <wire x1="20.32" y1="154.94" x2="20.32" y2="152.4" width="0.1524" layer="91"/>
 </segment>
@@ -2523,14 +2523,14 @@ Tactile Switch SPST-NO Top Actuated Surface Mount</description>
 <label x="91.44" y="162.56" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="D1" gate="G$1" pin="A"/>
+<pinref part="D3" gate="G$1" pin="A"/>
 <wire x1="106.68" y1="83.82" x2="106.68" y2="91.44" width="0.1524" layer="91"/>
 <label x="106.68" y="88.9" size="1.778" layer="95" rot="R90"/>
 </segment>
 <segment>
 <wire x1="177.8" y1="162.56" x2="165.1" y2="162.56" width="0.1524" layer="91"/>
 <label x="165.1" y="162.56" size="1.778" layer="95"/>
-<pinref part="U$2" gate="G$1" pin="1"/>
+<pinref part="X6" gate="G$1" pin="1"/>
 </segment>
 </net>
 <net name="IO2" class="0">
@@ -2540,14 +2540,14 @@ Tactile Switch SPST-NO Top Actuated Surface Mount</description>
 <label x="91.44" y="160.02" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="D2" gate="G$1" pin="A"/>
+<pinref part="D4" gate="G$1" pin="A"/>
 <wire x1="114.3" y1="91.44" x2="114.3" y2="83.82" width="0.1524" layer="91"/>
 <label x="114.3" y="88.9" size="1.778" layer="95" rot="R90"/>
 </segment>
 <segment>
 <wire x1="165.1" y1="160.02" x2="177.8" y2="160.02" width="0.1524" layer="91"/>
 <label x="165.1" y="160.02" size="1.778" layer="95"/>
-<pinref part="U$2" gate="G$1" pin="2"/>
+<pinref part="X6" gate="G$1" pin="2"/>
 </segment>
 </net>
 <net name="IO4" class="0">
@@ -2557,14 +2557,14 @@ Tactile Switch SPST-NO Top Actuated Surface Mount</description>
 <label x="91.44" y="157.48" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="D3" gate="G$1" pin="A"/>
+<pinref part="D5" gate="G$1" pin="A"/>
 <wire x1="121.92" y1="91.44" x2="121.92" y2="83.82" width="0.1524" layer="91"/>
 <label x="121.92" y="88.9" size="1.778" layer="95" rot="R90"/>
 </segment>
 <segment>
 <wire x1="165.1" y1="157.48" x2="177.8" y2="157.48" width="0.1524" layer="91"/>
 <label x="165.1" y="157.48" size="1.778" layer="95"/>
-<pinref part="U$2" gate="G$1" pin="3"/>
+<pinref part="X6" gate="G$1" pin="3"/>
 </segment>
 </net>
 <net name="IO5" class="0">
@@ -2574,14 +2574,14 @@ Tactile Switch SPST-NO Top Actuated Surface Mount</description>
 <label x="91.44" y="154.94" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="D4" gate="G$1" pin="A"/>
+<pinref part="D6" gate="G$1" pin="A"/>
 <wire x1="129.54" y1="91.44" x2="129.54" y2="83.82" width="0.1524" layer="91"/>
 <label x="129.54" y="88.9" size="1.778" layer="95" rot="R90"/>
 </segment>
 <segment>
 <wire x1="165.1" y1="154.94" x2="177.8" y2="154.94" width="0.1524" layer="91"/>
 <label x="165.1" y="154.94" size="1.778" layer="95"/>
-<pinref part="U$2" gate="G$1" pin="4"/>
+<pinref part="X6" gate="G$1" pin="4"/>
 </segment>
 </net>
 <net name="IO16" class="0">
@@ -2591,14 +2591,14 @@ Tactile Switch SPST-NO Top Actuated Surface Mount</description>
 <label x="91.44" y="152.4" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="D5" gate="G$1" pin="A"/>
+<pinref part="D7" gate="G$1" pin="A"/>
 <wire x1="137.16" y1="91.44" x2="137.16" y2="83.82" width="0.1524" layer="91"/>
 <label x="137.16" y="88.9" size="1.778" layer="95" rot="R90"/>
 </segment>
 <segment>
 <wire x1="165.1" y1="152.4" x2="177.8" y2="152.4" width="0.1524" layer="91"/>
 <label x="165.1" y="152.4" size="1.778" layer="95"/>
-<pinref part="U$2" gate="G$1" pin="5"/>
+<pinref part="X6" gate="G$1" pin="5"/>
 </segment>
 </net>
 <net name="IO17" class="0">
@@ -2608,14 +2608,14 @@ Tactile Switch SPST-NO Top Actuated Surface Mount</description>
 <label x="91.44" y="149.86" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="D6" gate="G$1" pin="A"/>
+<pinref part="D8" gate="G$1" pin="A"/>
 <wire x1="144.78" y1="91.44" x2="144.78" y2="83.82" width="0.1524" layer="91"/>
 <label x="144.78" y="88.9" size="1.778" layer="95" rot="R90"/>
 </segment>
 <segment>
 <wire x1="165.1" y1="149.86" x2="177.8" y2="149.86" width="0.1524" layer="91"/>
 <label x="165.1" y="149.86" size="1.778" layer="95"/>
-<pinref part="U$2" gate="G$1" pin="6"/>
+<pinref part="X6" gate="G$1" pin="6"/>
 </segment>
 </net>
 <net name="IO18" class="0">
@@ -2625,14 +2625,14 @@ Tactile Switch SPST-NO Top Actuated Surface Mount</description>
 <label x="91.44" y="147.32" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="D7" gate="G$1" pin="A"/>
+<pinref part="D9" gate="G$1" pin="A"/>
 <wire x1="152.4" y1="91.44" x2="152.4" y2="83.82" width="0.1524" layer="91"/>
 <label x="152.4" y="88.9" size="1.778" layer="95" rot="R90"/>
 </segment>
 <segment>
 <wire x1="165.1" y1="147.32" x2="177.8" y2="147.32" width="0.1524" layer="91"/>
 <label x="165.1" y="147.32" size="1.778" layer="95"/>
-<pinref part="U$2" gate="G$1" pin="7"/>
+<pinref part="X6" gate="G$1" pin="7"/>
 </segment>
 </net>
 <net name="IO19" class="0">
@@ -2642,14 +2642,14 @@ Tactile Switch SPST-NO Top Actuated Surface Mount</description>
 <label x="91.44" y="144.78" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="D8" gate="G$1" pin="A"/>
+<pinref part="D10" gate="G$1" pin="A"/>
 <wire x1="160.02" y1="91.44" x2="160.02" y2="83.82" width="0.1524" layer="91"/>
 <label x="160.02" y="88.9" size="1.778" layer="95" rot="R90"/>
 </segment>
 <segment>
 <wire x1="165.1" y1="144.78" x2="177.8" y2="144.78" width="0.1524" layer="91"/>
 <label x="165.1" y="144.78" size="1.778" layer="95"/>
-<pinref part="U$2" gate="G$1" pin="8"/>
+<pinref part="X6" gate="G$1" pin="8"/>
 </segment>
 </net>
 <net name="IO21" class="0">
@@ -2659,14 +2659,14 @@ Tactile Switch SPST-NO Top Actuated Surface Mount</description>
 <label x="91.44" y="142.24" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="D9" gate="G$1" pin="A"/>
+<pinref part="D11" gate="G$1" pin="A"/>
 <wire x1="167.64" y1="91.44" x2="167.64" y2="83.82" width="0.1524" layer="91"/>
 <label x="167.64" y="88.9" size="1.778" layer="95" rot="R90"/>
 </segment>
 <segment>
 <wire x1="165.1" y1="142.24" x2="177.8" y2="142.24" width="0.1524" layer="91"/>
 <label x="165.1" y="142.24" size="1.778" layer="95"/>
-<pinref part="U$2" gate="G$1" pin="9"/>
+<pinref part="X6" gate="G$1" pin="9"/>
 </segment>
 </net>
 <net name="IO22" class="0">
@@ -2683,7 +2683,7 @@ Tactile Switch SPST-NO Top Actuated Surface Mount</description>
 <segment>
 <wire x1="165.1" y1="139.7" x2="177.8" y2="139.7" width="0.1524" layer="91"/>
 <label x="165.1" y="139.7" size="1.778" layer="95"/>
-<pinref part="U$2" gate="G$1" pin="10"/>
+<pinref part="X6" gate="G$1" pin="10"/>
 </segment>
 </net>
 <net name="IO23" class="0">
@@ -2698,7 +2698,7 @@ Tactile Switch SPST-NO Top Actuated Surface Mount</description>
 <label x="182.88" y="88.9" size="1.778" layer="95" rot="R90"/>
 </segment>
 <segment>
-<pinref part="X5" gate="G$1" pin="1"/>
+<pinref part="X7" gate="G$1" pin="1"/>
 <wire x1="200.66" y1="162.56" x2="213.36" y2="162.56" width="0.1524" layer="91"/>
 <label x="200.66" y="162.56" size="1.778" layer="95"/>
 </segment>
@@ -2715,7 +2715,7 @@ Tactile Switch SPST-NO Top Actuated Surface Mount</description>
 <label x="190.5" y="88.9" size="1.778" layer="95" rot="R90"/>
 </segment>
 <segment>
-<pinref part="X5" gate="G$1" pin="2"/>
+<pinref part="X7" gate="G$1" pin="2"/>
 <wire x1="213.36" y1="160.02" x2="200.66" y2="160.02" width="0.1524" layer="91"/>
 <label x="200.66" y="160.02" size="1.778" layer="95"/>
 </segment>
@@ -2734,7 +2734,7 @@ Tactile Switch SPST-NO Top Actuated Surface Mount</description>
 <segment>
 <wire x1="213.36" y1="157.48" x2="200.66" y2="157.48" width="0.1524" layer="91"/>
 <label x="200.66" y="157.48" size="1.778" layer="95"/>
-<pinref part="X5" gate="G$1" pin="3"/>
+<pinref part="X7" gate="G$1" pin="3"/>
 </segment>
 </net>
 <net name="IO27" class="0">
@@ -2746,10 +2746,10 @@ Tactile Switch SPST-NO Top Actuated Surface Mount</description>
 <segment>
 <wire x1="200.66" y1="154.94" x2="213.36" y2="154.94" width="0.1524" layer="91"/>
 <label x="200.66" y="154.94" size="1.778" layer="95"/>
-<pinref part="X5" gate="G$1" pin="4"/>
+<pinref part="X7" gate="G$1" pin="4"/>
 </segment>
 <segment>
-<pinref part="D22" gate="G$1" pin="A"/>
+<pinref part="D16" gate="G$1" pin="A"/>
 <wire x1="205.74" y1="91.44" x2="205.74" y2="83.82" width="0.1524" layer="91"/>
 <label x="205.74" y="88.9" size="1.778" layer="95" rot="R90"/>
 </segment>
@@ -2761,14 +2761,14 @@ Tactile Switch SPST-NO Top Actuated Surface Mount</description>
 <label x="91.44" y="127" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="D16" gate="G$1" pin="A"/>
+<pinref part="D17" gate="G$1" pin="A"/>
 <wire x1="213.36" y1="91.44" x2="213.36" y2="83.82" width="0.1524" layer="91"/>
 <label x="213.36" y="88.9" size="1.778" layer="95" rot="R90"/>
 </segment>
 <segment>
 <wire x1="200.66" y1="152.4" x2="213.36" y2="152.4" width="0.1524" layer="91"/>
 <label x="200.66" y="152.4" size="1.778" layer="95"/>
-<pinref part="X5" gate="G$1" pin="5"/>
+<pinref part="X7" gate="G$1" pin="5"/>
 </segment>
 </net>
 <net name="IO33" class="0">
@@ -2778,14 +2778,14 @@ Tactile Switch SPST-NO Top Actuated Surface Mount</description>
 <label x="91.44" y="124.46" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="D17" gate="G$1" pin="A"/>
+<pinref part="D18" gate="G$1" pin="A"/>
 <wire x1="220.98" y1="91.44" x2="220.98" y2="83.82" width="0.1524" layer="91"/>
 <label x="220.98" y="88.9" size="1.778" layer="95" rot="R90"/>
 </segment>
 <segment>
 <wire x1="200.66" y1="149.86" x2="213.36" y2="149.86" width="0.1524" layer="91"/>
 <label x="200.66" y="149.86" size="1.778" layer="95"/>
-<pinref part="X5" gate="G$1" pin="6"/>
+<pinref part="X7" gate="G$1" pin="6"/>
 </segment>
 </net>
 <net name="IO35" class="0">
@@ -2795,14 +2795,14 @@ Tactile Switch SPST-NO Top Actuated Surface Mount</description>
 <label x="91.44" y="119.38" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="D19" gate="G$1" pin="A"/>
+<pinref part="D20" gate="G$1" pin="A"/>
 <wire x1="236.22" y1="91.44" x2="236.22" y2="83.82" width="0.1524" layer="91"/>
 <label x="236.22" y="88.9" size="1.778" layer="95" rot="R90"/>
 </segment>
 <segment>
 <wire x1="200.66" y1="144.78" x2="213.36" y2="144.78" width="0.1524" layer="91"/>
 <label x="200.66" y="144.78" size="1.778" layer="95"/>
-<pinref part="X5" gate="G$1" pin="8"/>
+<pinref part="X7" gate="G$1" pin="8"/>
 </segment>
 </net>
 <net name="IO34" class="0">
@@ -2812,14 +2812,14 @@ Tactile Switch SPST-NO Top Actuated Surface Mount</description>
 <label x="91.44" y="121.92" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="D18" gate="G$1" pin="A"/>
+<pinref part="D19" gate="G$1" pin="A"/>
 <wire x1="228.6" y1="91.44" x2="228.6" y2="83.82" width="0.1524" layer="91"/>
 <label x="228.6" y="88.9" size="1.778" layer="95" rot="R90"/>
 </segment>
 <segment>
 <wire x1="200.66" y1="147.32" x2="213.36" y2="147.32" width="0.1524" layer="91"/>
 <label x="200.66" y="147.32" size="1.778" layer="95"/>
-<pinref part="X5" gate="G$1" pin="7"/>
+<pinref part="X7" gate="G$1" pin="7"/>
 </segment>
 </net>
 <net name="TDI" class="0">
@@ -2829,7 +2829,7 @@ Tactile Switch SPST-NO Top Actuated Surface Mount</description>
 <label x="91.44" y="111.76" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="X6" gate="G$1" pin="TDI"/>
+<pinref part="X2" gate="G$1" pin="TDI"/>
 <wire x1="25.4" y1="22.86" x2="38.1" y2="22.86" width="0.1524" layer="91"/>
 <label x="25.4" y="22.86" size="1.778" layer="95"/>
 </segment>
@@ -2841,7 +2841,7 @@ Tactile Switch SPST-NO Top Actuated Surface Mount</description>
 <label x="91.44" y="109.22" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="X6" gate="G$1" pin="TCK"/>
+<pinref part="X2" gate="G$1" pin="TCK"/>
 <wire x1="25.4" y1="27.94" x2="38.1" y2="27.94" width="0.1524" layer="91"/>
 <label x="25.4" y="27.94" size="1.778" layer="95"/>
 </segment>
@@ -2853,14 +2853,14 @@ Tactile Switch SPST-NO Top Actuated Surface Mount</description>
 <label x="91.44" y="106.68" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="X6" gate="G$1" pin="TMS"/>
+<pinref part="X2" gate="G$1" pin="TMS"/>
 <wire x1="38.1" y1="30.48" x2="25.4" y2="30.48" width="0.1524" layer="91"/>
 <label x="25.4" y="30.48" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="TDO" class="0">
 <segment>
-<pinref part="X6" gate="G$1" pin="TDO"/>
+<pinref part="X2" gate="G$1" pin="TDO"/>
 <wire x1="25.4" y1="25.4" x2="38.1" y2="25.4" width="0.1524" layer="91"/>
 <label x="25.4" y="25.4" size="1.778" layer="95"/>
 </segment>
@@ -2875,13 +2875,13 @@ Tactile Switch SPST-NO Top Actuated Surface Mount</description>
 <pinref part="R3" gate="G$1" pin="8"/>
 <wire x1="114.3" y1="66.04" x2="114.3" y2="68.58" width="0.1524" layer="91"/>
 <wire x1="114.3" y1="68.58" x2="129.54" y2="68.58" width="0.1524" layer="91"/>
-<pinref part="D4" gate="G$1" pin="C"/>
+<pinref part="D6" gate="G$1" pin="C"/>
 <wire x1="129.54" y1="68.58" x2="129.54" y2="76.2" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$4" class="0">
 <segment>
-<pinref part="D3" gate="G$1" pin="C"/>
+<pinref part="D5" gate="G$1" pin="C"/>
 <wire x1="121.92" y1="76.2" x2="121.92" y2="71.12" width="0.1524" layer="91"/>
 <wire x1="121.92" y1="71.12" x2="111.76" y2="71.12" width="0.1524" layer="91"/>
 <pinref part="R3" gate="G$1" pin="6"/>
@@ -2892,14 +2892,14 @@ Tactile Switch SPST-NO Top Actuated Surface Mount</description>
 <segment>
 <pinref part="R3" gate="G$1" pin="4"/>
 <wire x1="109.22" y1="66.04" x2="109.22" y2="73.66" width="0.1524" layer="91"/>
-<pinref part="D2" gate="G$1" pin="C"/>
+<pinref part="D4" gate="G$1" pin="C"/>
 <wire x1="109.22" y1="73.66" x2="114.3" y2="73.66" width="0.1524" layer="91"/>
 <wire x1="114.3" y1="73.66" x2="114.3" y2="76.2" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$6" class="0">
 <segment>
-<pinref part="D1" gate="G$1" pin="C"/>
+<pinref part="D3" gate="G$1" pin="C"/>
 <pinref part="R3" gate="G$1" pin="2"/>
 <wire x1="106.68" y1="76.2" x2="106.68" y2="66.04" width="0.1524" layer="91"/>
 </segment>
@@ -2907,7 +2907,7 @@ Tactile Switch SPST-NO Top Actuated Surface Mount</description>
 <net name="N$7" class="0">
 <segment>
 <pinref part="R4" gate="G$1" pin="2"/>
-<pinref part="D5" gate="G$1" pin="C"/>
+<pinref part="D7" gate="G$1" pin="C"/>
 <wire x1="137.16" y1="66.04" x2="137.16" y2="76.2" width="0.1524" layer="91"/>
 </segment>
 </net>
@@ -2916,7 +2916,7 @@ Tactile Switch SPST-NO Top Actuated Surface Mount</description>
 <pinref part="R4" gate="G$1" pin="4"/>
 <wire x1="139.7" y1="66.04" x2="139.7" y2="73.66" width="0.1524" layer="91"/>
 <wire x1="139.7" y1="73.66" x2="144.78" y2="73.66" width="0.1524" layer="91"/>
-<pinref part="D6" gate="G$1" pin="C"/>
+<pinref part="D8" gate="G$1" pin="C"/>
 <wire x1="144.78" y1="73.66" x2="144.78" y2="76.2" width="0.1524" layer="91"/>
 </segment>
 </net>
@@ -2924,7 +2924,7 @@ Tactile Switch SPST-NO Top Actuated Surface Mount</description>
 <segment>
 <pinref part="R4" gate="G$1" pin="6"/>
 <wire x1="142.24" y1="66.04" x2="142.24" y2="71.12" width="0.1524" layer="91"/>
-<pinref part="D7" gate="G$1" pin="C"/>
+<pinref part="D9" gate="G$1" pin="C"/>
 <wire x1="142.24" y1="71.12" x2="152.4" y2="71.12" width="0.1524" layer="91"/>
 <wire x1="152.4" y1="71.12" x2="152.4" y2="76.2" width="0.1524" layer="91"/>
 </segment>
@@ -2933,7 +2933,7 @@ Tactile Switch SPST-NO Top Actuated Surface Mount</description>
 <segment>
 <pinref part="R4" gate="G$1" pin="8"/>
 <wire x1="144.78" y1="66.04" x2="144.78" y2="68.58" width="0.1524" layer="91"/>
-<pinref part="D8" gate="G$1" pin="C"/>
+<pinref part="D10" gate="G$1" pin="C"/>
 <wire x1="144.78" y1="68.58" x2="160.02" y2="68.58" width="0.1524" layer="91"/>
 <wire x1="160.02" y1="68.58" x2="160.02" y2="76.2" width="0.1524" layer="91"/>
 </segment>
@@ -2941,7 +2941,7 @@ Tactile Switch SPST-NO Top Actuated Surface Mount</description>
 <net name="N$11" class="0">
 <segment>
 <pinref part="R5" gate="G$1" pin="2"/>
-<pinref part="D9" gate="G$1" pin="C"/>
+<pinref part="D11" gate="G$1" pin="C"/>
 <wire x1="167.64" y1="66.04" x2="167.64" y2="76.2" width="0.1524" layer="91"/>
 </segment>
 </net>
@@ -2981,7 +2981,7 @@ Tactile Switch SPST-NO Top Actuated Surface Mount</description>
 </net>
 <net name="N$20" class="0">
 <segment>
-<pinref part="D16" gate="G$1" pin="C"/>
+<pinref part="D17" gate="G$1" pin="C"/>
 <pinref part="R6" gate="G$1" pin="6"/>
 <wire x1="203.2" y1="66.04" x2="203.2" y2="71.12" width="0.1524" layer="91"/>
 <wire x1="203.2" y1="71.12" x2="213.36" y2="71.12" width="0.1524" layer="91"/>
@@ -2990,7 +2990,7 @@ Tactile Switch SPST-NO Top Actuated Surface Mount</description>
 </net>
 <net name="N$16" class="0">
 <segment>
-<pinref part="D22" gate="G$1" pin="C"/>
+<pinref part="D16" gate="G$1" pin="C"/>
 <wire x1="205.74" y1="73.66" x2="205.74" y2="76.2" width="0.1524" layer="91"/>
 <pinref part="R6" gate="G$1" pin="4"/>
 <wire x1="200.66" y1="66.04" x2="200.66" y2="73.66" width="0.1524" layer="91"/>
@@ -3002,14 +3002,14 @@ Tactile Switch SPST-NO Top Actuated Surface Mount</description>
 <pinref part="R6" gate="G$1" pin="8"/>
 <wire x1="205.74" y1="66.04" x2="205.74" y2="68.58" width="0.1524" layer="91"/>
 <wire x1="205.74" y1="68.58" x2="220.98" y2="68.58" width="0.1524" layer="91"/>
-<pinref part="D17" gate="G$1" pin="C"/>
+<pinref part="D18" gate="G$1" pin="C"/>
 <wire x1="220.98" y1="68.58" x2="220.98" y2="76.2" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$21" class="0">
 <segment>
 <pinref part="R7" gate="G$1" pin="2"/>
-<pinref part="D18" gate="G$1" pin="C"/>
+<pinref part="D19" gate="G$1" pin="C"/>
 <wire x1="228.6" y1="66.04" x2="228.6" y2="76.2" width="0.1524" layer="91"/>
 </segment>
 </net>
@@ -3017,7 +3017,7 @@ Tactile Switch SPST-NO Top Actuated Surface Mount</description>
 <segment>
 <pinref part="R7" gate="G$1" pin="4"/>
 <wire x1="231.14" y1="66.04" x2="231.14" y2="73.66" width="0.1524" layer="91"/>
-<pinref part="D19" gate="G$1" pin="C"/>
+<pinref part="D20" gate="G$1" pin="C"/>
 <wire x1="231.14" y1="73.66" x2="236.22" y2="73.66" width="0.1524" layer="91"/>
 <wire x1="236.22" y1="73.66" x2="236.22" y2="76.2" width="0.1524" layer="91"/>
 </segment>
@@ -3027,7 +3027,7 @@ Tactile Switch SPST-NO Top Actuated Surface Mount</description>
 <pinref part="R7" gate="G$1" pin="6"/>
 <wire x1="233.68" y1="66.04" x2="233.68" y2="71.12" width="0.1524" layer="91"/>
 <wire x1="233.68" y1="71.12" x2="243.84" y2="71.12" width="0.1524" layer="91"/>
-<pinref part="D20" gate="G$1" pin="C"/>
+<pinref part="D21" gate="G$1" pin="C"/>
 <wire x1="243.84" y1="71.12" x2="243.84" y2="76.2" width="0.1524" layer="91"/>
 </segment>
 </net>
@@ -3036,7 +3036,7 @@ Tactile Switch SPST-NO Top Actuated Surface Mount</description>
 <pinref part="R7" gate="G$1" pin="8"/>
 <wire x1="236.22" y1="66.04" x2="236.22" y2="68.58" width="0.1524" layer="91"/>
 <wire x1="236.22" y1="68.58" x2="251.46" y2="68.58" width="0.1524" layer="91"/>
-<pinref part="D21" gate="G$1" pin="C"/>
+<pinref part="D22" gate="G$1" pin="C"/>
 <wire x1="251.46" y1="68.58" x2="251.46" y2="76.2" width="0.1524" layer="91"/>
 </segment>
 </net>
@@ -3044,18 +3044,32 @@ Tactile Switch SPST-NO Top Actuated Surface Mount</description>
 </sheet>
 </sheets>
 <errors>
+<approved hash="104,1,63.5,30.48,X6,VCC,3.3V,,,"/>
+<approved hash="106,1,139.7,119.38,SVN,,,,,"/>
+<approved hash="106,1,139.7,116.84,SVP,,,,,"/>
 <approved hash="113,1,130.071,89.431,FRAME1,,,,,"/>
-<approved hash="113,1,147.805,90.17,D1,,,,,"/>
-<approved hash="113,1,155.425,90.17,D2,,,,,"/>
-<approved hash="113,1,163.045,90.17,D3,,,,,"/>
-<approved hash="113,1,170.665,90.17,D4,,,,,"/>
-<approved hash="113,1,178.285,90.17,D5,,,,,"/>
-<approved hash="113,1,185.905,90.17,D6,,,,,"/>
-<approved hash="113,1,193.525,90.17,D7,,,,,"/>
-<approved hash="113,1,201.145,90.17,D8,,,,,"/>
-<approved hash="113,1,208.765,90.17,D9,,,,,"/>
-<approved hash="113,1,216.385,90.17,D12,,,,,"/>
-<approved hash="113,1,224.005,90.17,D13,,,,,"/>
+<approved hash="113,1,180.804,152.709,U$2,,,,,"/>
+<approved hash="113,1,105.867,80.01,D1,,,,,"/>
+<approved hash="113,1,112.245,80.01,D2,,,,,"/>
+<approved hash="113,1,119.865,80.01,D3,,,,,"/>
+<approved hash="113,1,127.485,80.01,D4,,,,,"/>
+<approved hash="113,1,135.105,80.01,D5,,,,,"/>
+<approved hash="113,1,142.725,80.01,D6,,,,,"/>
+<approved hash="113,1,150.345,80.01,D7,,,,,"/>
+<approved hash="113,1,157.965,80.01,D8,,,,,"/>
+<approved hash="113,1,165.585,80.01,D9,,,,,"/>
+<approved hash="113,1,173.205,80.01,D12,,,,,"/>
+<approved hash="113,1,180.825,80.01,D13,,,,,"/>
+<approved hash="113,1,188.445,80.01,D14,,,,,"/>
+<approved hash="113,1,196.065,80.01,D15,,,,,"/>
+<approved hash="113,1,211.305,80.01,D16,,,,,"/>
+<approved hash="113,1,218.925,80.01,D17,,,,,"/>
+<approved hash="113,1,226.545,80.01,D18,,,,,"/>
+<approved hash="113,1,234.165,80.01,D19,,,,,"/>
+<approved hash="113,1,241.785,80.01,D20,,,,,"/>
+<approved hash="113,1,249.405,80.01,D21,,,,,"/>
+<approved hash="113,1,216.364,152.709,X5,,,,,"/>
+<approved hash="113,1,203.685,80.01,D22,,,,,"/>
 </errors>
 </schematic>
 </drawing>
